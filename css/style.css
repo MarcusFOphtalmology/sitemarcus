@@ -7,18 +7,19 @@
 
 :root {
   /* Cores */
-  --bg: #F7F8F4;        /* Névoa */
-  --surface: #ECEFEA;   /* Linho */
-  --primary: #2E4033;   /* Verde profundo */
-  --ink: #1F2A22;       /* Tinta */
-  --ink-soft: #4A574D;  /* Musgo */
-  --accent: #7F9A86;    /* Sálvia (só detalhes, nunca texto) */
+  --bg: #F6F4ED;        /* Marfim */
+  --surface: #ECE8DC;   /* Linho quente */
+  --primary: #26231F;   /* Grafite da marca */
+  --ink: #1F1D1A;       /* Tinta */
+  --ink-soft: #57524A;  /* Cinza quente */
+  --accent: #B3924F;    /* Dourado da marca (só detalhes, nunca texto) */
+  --gold-text: #7A5C1E; /* Dourado escuro, legível em texto (5,6:1) */
   --white: #FFFFFF;
-  --line: rgba(127, 154, 134, 0.45);
+  --line: rgba(179, 146, 79, 0.45);
 
   /* Tipografia */
-  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   /* Espaço (base 8 px) */
   --space-1: 4px;  --space-2: 8px;  --space-3: 16px; --space-4: 24px;
@@ -138,7 +139,7 @@ p { margin: 0; }
   line-height: 1.2;
   min-width: 0;
 }
-.brand__name { font-family: var(--font-display); font-size: 1.375rem; font-weight: 600; }
+.brand__logo { display: block; height: 64px; width: auto; }
 .brand__role { font-size: 0.9375rem; color: var(--ink-soft); }
 
 .nav { display: none; }
@@ -454,3 +455,12 @@ p { margin: 0; }
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+
+.brand__role { display: none; }
+
+/* Identidade Lumenier: títulos em Cormorant (corpo maior para compensar o desenho fino) */
+h1, h2, h3, .about__lead, .spec-close__text, .places__city { font-weight: 500; }
+h1 { font-size: clamp(2.5rem, 1.3rem + 4vw, 4rem); line-height: 1.05; }
+h2 { font-size: clamp(2rem, 1.4rem + 2vw, 2.75rem); }
+.hero__kicker { color: var(--gold-text); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+body { font-size: 1rem; line-height: 1.65; }
