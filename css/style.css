@@ -464,3 +464,11 @@ h1 { font-size: clamp(2.5rem, 1.3rem + 4vw, 4rem); line-height: 1.05; }
 h2 { font-size: clamp(2rem, 1.4rem + 2vw, 2.75rem); }
 .hero__kicker { color: var(--gold-text); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
 body { font-size: 1rem; line-height: 1.65; }
+
+/* Celular: a foto abre a página, antes do texto e dos registros */
+@media (max-width: 899px) {
+  .hero { padding-block: var(--space-4) var(--space-7); }
+  .hero__grid { gap: var(--space-4); }
+  .hero__figure { order: -1; }
+  .hero__figure img { aspect-ratio: 4 / 3; object-fit: cover; object-position: 74% center; }
+}
