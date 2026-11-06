@@ -472,3 +472,5 @@ body { font-size: 1rem; line-height: 1.65; }
   .hero__figure { order: -1; }
   .hero__figure img { aspect-ratio: 4 / 3; object-fit: cover; object-position: 74% center; }
 }
+
+.contact__intro > .contact__guide { color: var(--ink); padding-left: var(--space-3); border-left: 3px solid var(--accent); }
